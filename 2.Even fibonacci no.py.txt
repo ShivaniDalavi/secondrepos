@@ -1,0 +1,16 @@
+# solution 2 : Even Fibonacci Series
+
+n1=1
+n2=1
+l1=[]
+sum=0
+while(1):
+    if n1%2==0:
+        l1.append(n1)
+        sum+=n1
+       
+    n1,n2=n2,n1+n2
+    if n1>400000:
+        break
+print(l1)
+print(sum)
